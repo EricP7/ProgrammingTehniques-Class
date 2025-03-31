@@ -67,3 +67,4 @@ function drawSun(x, y) {
     //NW
     triangle(x - 70, y - 70, x - 40, y - 55, x - 55, y - 40)
 }
+
