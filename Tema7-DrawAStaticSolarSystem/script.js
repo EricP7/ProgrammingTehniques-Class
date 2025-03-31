@@ -8,8 +8,35 @@ function setup() {
     drawSun(x, y)
 
     ellipse(x, y, 500, 300)
+    fill(211, 225, 242)
+    circle(715, 400, 25)
+    noFill()
 
     ellipse(x, y, 700, 350)
+    fill(238, 205, 205)
+    circle(565, 455, 38)
+    noFill()
+
+    ellipse(x, y, 900, 400)
+    fill(216, 210, 231)
+    circle(475, 435, 50)
+    noFill()
+
+    ellipse(x, y, 1150, 450)
+    fill(211, 223, 226)
+    circle(1435, 420, 75)
+    fill("black")
+    textSize(22)
+    text("P4", 1422, 428)
+    noFill()
+
+    ellipse(x, y, 1500, 530)
+    fill(189, 214, 172)
+    circle(1550, 630, 120)
+    fill("black")
+    textSize(26)
+    text("P5", 1535, 640)
+    noFill()
 }
 
 function drawSun(x, y) {
