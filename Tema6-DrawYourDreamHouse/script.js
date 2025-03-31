@@ -8,6 +8,14 @@ function draw() {
 
     drawHouse()
     drawSun(450, 350)
+    drawTree(250, 500)
+
+    drawTree(1200, 600)
+
+    drawTreeGroup(1500, 540)
+    drawTreeGroup(1470, 530)
+    drawTreeGroup(1530, 530)
+    drawTreeGroup(1570, 520)
 }
 
 function drawHouse() {
@@ -68,3 +76,41 @@ function drawSun(x, y) {
     triangle(x - 70, y - 70, x - 40, y - 55, x - 55, y - 40)
 }
 
+function drawTree(x, y) {
+
+    fill(167, 125, 88)
+    rect(x, y + 100, 30, 150)
+
+
+    fill(157, 195, 132)
+    beginShape();
+    vertex(x - 5, y + 10)
+    vertex(x + 20, y + 40)
+    vertex(x + 45, y + 10)
+    vertex(x + 50, y + 50)
+    vertex(x + 90, y + 40)
+    vertex(x + 70, y + 70)
+    vertex(x + 110, y + 90)
+    vertex(x + 70, y + 100)
+    vertex(x + 90, y + 130)
+    vertex(x + 50, y + 120)
+    vertex(x + 45, y + 160)
+    vertex(x + 20, y + 130)
+    vertex(x - 5, y + 160)
+    vertex(x - 10, y + 120)
+    vertex(x - 50, y + 130)
+    vertex(x - 30, y + 100)
+    vertex(x - 70, y + 90)
+    vertex(x - 30, y + 70)
+    vertex(x - 50, y + 40)
+    vertex(x - 10, y + 50)
+    endShape(CLOSE)
+}
+
+function drawTreeGroup(x, y) {
+
+    fill(167, 125, 88)
+    rect(x - 7, y - 7, 12, 80)
+    fill(72, 116, 44)
+    triangle(x - 30, y + 20, x, y - 90, x + 30, y + 20)
+}
