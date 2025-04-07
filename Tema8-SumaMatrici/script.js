@@ -105,35 +105,19 @@ function drawColorfulBoxes(matrix) {
 function plusSymbol() {
     beginShape()
 
-    // vertex(50, 40);
-    // vertex(50, 95);
-    // vertex(70, 95);
-    // vertex(70, 40);
 
-    // vertex(40, 50);
-    // vertex(40, 70);
-    // vertex(95, 70);
-    // vertex(95, 125)
-    // vertex(115, 125);
-    // vertex(115, 70);
-    // vertex(165, 70);
-    // vertex(165, 50);
-    // vertex(115, 50);
-    // vertex(115, 30);
-    // vertex()
-
-    // vertex(100, 100)
-    // vertex(100, 130)
-    // vertex(130, 130)
-    // vertex(130, 160)
-    // vertex(160, 160)
-    // vertex(160, 130)
-    // vertex(190, 130)
-    // vertex(190, 100)
-    // vertex(160, 100)
-    // vertex(160, 70)
-    // vertex(130, 70)
-    // vertex(130, 100)
+    vertex(100, 100)
+    vertex(100, 130)
+    vertex(130, 130)
+    vertex(130, 160)
+    vertex(160, 160)
+    vertex(160, 130)
+    vertex(190, 130)
+    vertex(190, 100)
+    vertex(160, 100)
+    vertex(160, 70)
+    vertex(130, 70)
+    vertex(130, 100)
 
 
 
