@@ -16,10 +16,10 @@ function setup() {
 
     // Inițializare cele 2 matrici cu offseturi diferite
     matrixA = initBoxes(colorfulBoxesCols, colorfulBoxesRows, 25, 25, 1);
-    matrixB = initBoxes(colorfulBoxesCols, colorfulBoxesRows, 320, 25, 5);
+    matrixB = initBoxes(colorfulBoxesCols, colorfulBoxesRows, 410, 25, 5);
 
     // Matricea sumă generată din A + B
-    matrixSum = addMatrices(matrixA, matrixB, 620, 25);
+    matrixSum = addMatrices(matrixA, matrixB, 790, 25);
 }
 
 function draw() {
@@ -28,6 +28,7 @@ function draw() {
     drawColorfulBoxes(matrixA);
     plusSymbol()
     drawColorfulBoxes(matrixB);
+    equalSymbol()
     drawColorfulBoxes(matrixSum);
 }
 
@@ -91,7 +92,7 @@ function drawBox(obj) {
     square(obj.x, obj.y, obj.s);
     fill("black");
     textSize(20);
-    text(obj.text, obj.x + 25, obj.y + 50);
+    text(obj.text, obj.x + 30, obj.y + 50);
 }
 
 function drawColorfulBoxes(matrix) {
@@ -105,22 +106,41 @@ function drawColorfulBoxes(matrix) {
 function plusSymbol() {
     beginShape()
 
+    fill(217, 217, 217)
 
-    vertex(100, 100)
-    vertex(100, 130)
-    vertex(130, 130)
-    vertex(130, 160)
-    vertex(160, 160)
-    vertex(160, 130)
-    vertex(190, 130)
-    vertex(190, 100)
-    vertex(160, 100)
-    vertex(160, 70)
-    vertex(130, 70)
-    vertex(130, 100)
-
-
+    vertex(300, 140)
+    vertex(300, 170)
+    vertex(330, 170)
+    vertex(330, 200)
+    vertex(360, 200)
+    vertex(360, 170)
+    vertex(390, 170)
+    vertex(390, 140)
+    vertex(360, 140)
+    vertex(360, 110)
+    vertex(330, 110)
+    vertex(330, 140)
 
 
     endShape(CLOSE);
+}
+
+function equalSymbol() {
+
+    fill(217, 217, 217)
+
+    beginShape(QUADS);
+
+    vertex(690, 115);
+    vertex(690, 145);
+    vertex(770, 145);
+    vertex(770, 115);
+
+    vertex(690, 160);
+    vertex(690, 190);
+    vertex(770, 190);
+    vertex(770, 160);
+
+    endShape();
+
 }
