@@ -6,12 +6,15 @@ const colorfulBoxesRows = 3;
 
 const colorfulBoxes = []
 
+
 function setup() {
     boardWidth = windowWidth
     boardHeight = windowHeight
 
     createCanvas(boardWidth, boardHeight)
-    initBoxes(colorfulBoxesCols, colorfulBoxesRows)
+    initBoxes(colorfulBoxesCols, colorfulBoxesRows, 25, 25)
+    initBoxes(colorfulBoxesCols, colorfulBoxesRows, 25 * 20, 25)
+
 }
 
 function draw() {
@@ -23,9 +26,13 @@ function draw() {
 
 
 
-function initBoxes(cols, rows) {
-    let x = 25;
-    let y = 25;
+
+
+function initBoxes(cols, rows, x, y) {
+    // let x = 25;
+    // let y = 25;
+    let m = x
+    let n = 1
     for (let i = 0; i < rows; i++) {
         const lines = [];
         colorfulBoxes.push(lines);
@@ -39,14 +46,16 @@ function initBoxes(cols, rows) {
                     g: Math.floor(Math.random() * 255),
                     b: Math.floor(Math.random() * 255),
                 },
-                text: Math.floor(Math.random() * 10),
+                //text: Math.floor(Math.random() * 10),
+                text: n
 
             };
 
             lines.push(box);
             x += 90;
+            n++
         }
-        x = 25;
+        x = m;
         y += 90;
     }
     console.log(colorfulBoxes);
