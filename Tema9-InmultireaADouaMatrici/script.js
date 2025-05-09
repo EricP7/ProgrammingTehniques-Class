@@ -17,7 +17,6 @@ function setup() {
     const resultGroup = multiplyGroups(group1, group2, 820, 70);
     colorfulBoxesGroups.push(resultGroup);
 
-
 }
 
 function draw() {
